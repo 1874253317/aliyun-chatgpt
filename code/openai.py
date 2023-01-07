@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
-# @Author   : LaiJiahao
+# @Author   : Mks
 # @Time     : 2022/12/16 10:29
 # @File     : openai.py
-# @Project  : aliyun-openAI
+# @Project  : 问答器
 
 import requests
 import markdown
@@ -15,7 +15,7 @@ class OpenAi:
         # 替换为你的api_key <https://beta.openai.com/account/api-keys>
         self.keys = "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"
         # 这个是设置回答的长度,最大可以设置到4096 (免费额度为$18,该值影响你的用量)
-        self.max_tokens =1500
+        self.max_tokens =1700
         # 值越高意味着模型将承担更多风险。对于更具创造性的应用程序，请尝试 0.9,建议0.5-0.6
         self.temperature = 0.5
     def get_answer(self,prompt):
